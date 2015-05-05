@@ -32,7 +32,7 @@ strokeWidth = 40
 
 # draw new arc (have to replace this everytime)
 drawAngle = (angle, hue) ->
-	# following some trigonometry to turn the angle into points on the path
+	# some trigonometry to turn the angle into points on the path
 	d = angle
 	dr = angle-90 # make 0 degree begin at the top
 	radians = Math.PI*(dr)/180 # convert angle to radians
@@ -71,10 +71,6 @@ circle.attr
 drawAngle(0,185/360)
 
 
-sketch.button.on Events.Click, ->
-	# animate
-	redBox.states.next()
-			
 # set up helper that we use for animation
 redBox = new Layer { width: 10, height: 10, backgroundColor: "red" }
 redBox.states.add { full: x: 82 }
@@ -82,6 +78,11 @@ redBox.states.animationOptions = curve: "cubic-bezier(.95,0,.4,1.16)", time: 3 #
 
 # kickoff initial animation
 Utils.delay .25, ->
+	redBox.states.next()
+	
+# animate with the press of a button
+sketch.button.on Events.Click, ->
+	# animate
 	redBox.states.next()
 
 # change SVG when red box moves
@@ -93,6 +94,7 @@ redBox.on "change:x", (e) ->
 	# change arc color depending on progress
 	h = Utils.modulate(e, [0,75], [185/360,337/360], true)
 
+	# let's draw!
 	drawAngle(newAngle,h)
 		
 	# change step counter (throttled function)
