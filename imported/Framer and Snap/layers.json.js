@@ -2,18 +2,18 @@ window.__imported__ = window.__imported__ || {};
 window.__imported__["Framer and Snap/layers.json.js"] = [
   {
     "maskFrame" : null,
-    "id" : "AF474BB9-B3FF-4314-90DF-296143B02C61",
+    "id" : "10A908D2-280D-4F21-800F-70550B7A957E",
     "visible" : true,
     "children" : [
       {
         "maskFrame" : null,
-        "id" : "413C7A97-2450-4DFD-8682-B6EE983ECA08",
+        "id" : "A834EA96-3A5D-4967-AE9B-0E99D0D739B3",
         "visible" : true,
         "children" : [
 
         ],
         "image" : {
-          "path" : "images\/Layer-button-413C7A97-2450-4DFD-8682-B6EE983ECA08.png",
+          "path" : "images\/Layer-button-A834EA96-3A5D-4967-AE9B-0E99D0D739B3.png",
           "frame" : {
             "y" : 1148,
             "x" : 212,
@@ -32,23 +32,23 @@ window.__imported__["Framer and Snap/layers.json.js"] = [
       },
       {
         "maskFrame" : null,
-        "id" : "BA5325CB-0E38-4D37-9B28-58B46FBF1434",
+        "id" : "179A505E-A14B-4C54-9052-764B99E88881",
         "visible" : true,
         "children" : [
           {
             "maskFrame" : null,
-            "id" : "BD5A67E0-F207-41F6-B7F0-C3AB52BD92C0",
+            "id" : "0FF29CAC-15A8-4141-BBC1-2947803E85F8",
             "visible" : true,
             "children" : [
               {
                 "maskFrame" : null,
-                "id" : "57B9F7B3-3073-479D-9EE0-B7318F749583",
+                "id" : "6C28E580-510E-4CC7-A3F6-ECDF573944D6",
                 "visible" : true,
                 "children" : [
 
                 ],
                 "image" : {
-                  "path" : "images\/Layer-Battery-57B9F7B3-3073-479D-9EE0-B7318F749583.png",
+                  "path" : "images\/Layer-Battery-6C28E580-510E-4CC7-A3F6-ECDF573944D6.png",
                   "frame" : {
                     "y" : 10,
                     "x" : 691,
@@ -67,7 +67,7 @@ window.__imported__["Framer and Snap/layers.json.js"] = [
               }
             ],
             "image" : {
-              "path" : "images\/Layer-100%__Bluetooth__Battery-BD5A67E0-F207-41F6-B7F0-C3AB52BD92C0.png",
+              "path" : "images\/Layer-100%__Bluetooth__Battery-0FF29CAC-15A8-4141-BBC1-2947803E85F8.png",
               "frame" : {
                 "y" : 4,
                 "x" : 595,
@@ -86,13 +86,13 @@ window.__imported__["Framer and Snap/layers.json.js"] = [
           },
           {
             "maskFrame" : null,
-            "id" : "E1617C81-5F17-4069-8001-84A9AFFD909C",
+            "id" : "FE2F42AE-BBF5-41A1-9FED-DC31C0F6986C",
             "visible" : true,
             "children" : [
 
             ],
             "image" : {
-              "path" : "images\/Layer-Signal_&_Carrier-E1617C81-5F17-4069-8001-84A9AFFD909C.png",
+              "path" : "images\/Layer-Signal_&_Carrier-FE2F42AE-BBF5-41A1-9FED-DC31C0F6986C.png",
               "frame" : {
                 "y" : 10,
                 "x" : 12,
@@ -111,7 +111,7 @@ window.__imported__["Framer and Snap/layers.json.js"] = [
           }
         ],
         "image" : {
-          "path" : "images\/Layer-statusbar-BA5325CB-0E38-4D37-9B28-58B46FBF1434.png",
+          "path" : "images\/Layer-statusbar-179A505E-A14B-4C54-9052-764B99E88881.png",
           "frame" : {
             "y" : 4,
             "x" : 12,
@@ -127,35 +127,10 @@ window.__imported__["Framer and Snap/layers.json.js"] = [
           "height" : 31
         },
         "name" : "statusbar"
-      },
-      {
-        "maskFrame" : null,
-        "id" : "8E1D8777-F997-4413-955F-2F385A9FF0B6",
-        "visible" : true,
-        "children" : [
-
-        ],
-        "image" : {
-          "path" : "images\/Layer-steps-8E1D8777-F997-4413-955F-2F385A9FF0B6.png",
-          "frame" : {
-            "y" : 608,
-            "x" : 242,
-            "width" : 267,
-            "height" : 61
-          }
-        },
-        "imageType" : "png",
-        "layerFrame" : {
-          "y" : 608,
-          "x" : 242,
-          "width" : 267,
-          "height" : 61
-        },
-        "name" : "steps"
       }
     ],
     "image" : {
-      "path" : "images\/Layer-iPhone_6-AF474BB9-B3FF-4314-90DF-296143B02C61.png",
+      "path" : "images\/Layer-iPhone_6-10A908D2-280D-4F21-800F-70550B7A957E.png",
       "frame" : {
         "y" : 0,
         "x" : 0,

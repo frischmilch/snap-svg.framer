@@ -4,16 +4,6 @@
 # This imports all the layers for "Framer and Snap" into framerAndSnapLayers
 sketch = Framer.Importer.load "imported/Framer and Snap"
 
-# replace sketch step counter with live text
-sketch.steps.image = null
-sketch.steps.html = "0"
-sketch.steps.style =
-	color: "black"
-	textAlign: "center"
-	fontSize: "82px"
-	fontWeight: "medium"
-	lineHeight: ".8"
-
 # create canvas
 canvas = new Layer
 	width: 750,
@@ -25,50 +15,25 @@ canvas.center()
 canvas.html = "<svg id='svg' style='width:#{canvas.width}px;height:#{canvas.height}px;ignore-events:all;'></svg>"
 snap = Snap(canvas.querySelector("#svg"))
 
-# set up some values used to draw the SVG
-radius = 300
-arc = null # make arc global so everyone can access it
-strokeWidth = 40
+# draw custom SVG object (exported vector from sketch, paste d attribute of path here)
+object = snap.path("M296.050781,171.402344 L78.9492188,171.402344 L119.003906,248.097656 L210.527344,26.5429688 L214.980469,348.457031 L296.050781,171.402344 Z")
 
-# draw new arc (have to replace this everytime)
-drawAngle = (angle, hue) ->
-	# following some trigonometry to turn the angle into points on the path
-	d = angle
-	dr = angle-90 # make 0 degree begin at the top
-	radians = Math.PI*(dr)/180 # convert angle to radians
-	startx = canvas.width/2
-	starty = canvas.height/2 - radius
-	endx = canvas.width/2 + radius*Math.cos(radians)
-	endy = canvas.height/2 + radius*Math.sin(radians)
-	largeArc = 0; largeArc = 1 if d>180
+# get to know path length
+pathLength = object.getTotalLength()
 
-	# remove arc if it already exists
-	arc?.remove()
-
-	# create arc using SVG path commands
-	arc = snap.path("
-				M#{startx},#{starty} # moveTo top of canvas
-				# A rx ry x-axis-rotation large-arc-flag sweep-flag x y
-				A#{radius},#{radius} 0 #{largeArc},1 #{endx},#{endy} # arc to
-			")
-			
-	# set attributes of SVG path
-	arc.attr
-		fill: "none"
-		stroke: "hsb(#{hue},1,.96)"
-		strokeWidth: "#{strokeWidth}px"
-		strokeLinecap: "round"
-
-
-# draw base circle
-circle = snap.circle(canvas.width/2, canvas.height/2, radius)
-circle.attr
+# change path attribute
+object.attr
 	fill: "none"
-	stroke: "#e0e0e0"
-	strokeWidth: "#{strokeWidth}px"
+	stroke: "hsb(0,0,0)"
+	strokeWidth: "6px"
+	strokeLinejoin: "round"
+	strokeLinecap: "round"
+	strokeDasharray: pathLength + ' ' + pathLength
+	strokeDashoffset: pathLength # set offset to pathlength makes the path invisible
 
-# draw initial angle (a blob)
-drawAngle(0,185/360)
+# adjust object size and position (the coordinates from sketch are not exactly where we need them)
+object.transform("translate(50,45) scale(1.75)")
+
 
 
 sketch.button.on Events.Click, ->
@@ -77,8 +42,8 @@ sketch.button.on Events.Click, ->
 			
 # set up helper that we use for animation
 redBox = new Layer { width: 10, height: 10, backgroundColor: "red" }
-redBox.states.add { full: x: 82 }
-redBox.states.animationOptions = curve: "cubic-bezier(.95,0,.4,1.16)", time: 3 # "spring(125,15,0)"
+redBox.states.add { full: x: 100 }
+redBox.states.animationOptions = curve: "cubic-bezier(.8,0,.6,1)", time: 2
 
 # kickoff initial animation
 Utils.delay .25, ->
@@ -87,18 +52,10 @@ Utils.delay .25, ->
 # change SVG when red box moves
 redBox.on "change:x", (e) ->
 	
-	# find new angle
-	newAngle = Utils.modulate(e, [0,100], [0,359], true)
+	# offset dash in path from pathlength to 0
+	object.attr { strokeDashoffset: Utils.modulate(e, [0,100], [pathLength,0], true) }
 
 	# change arc color depending on progress
 	h = Utils.modulate(e, [0,75], [185/360,337/360], true)
+	object.attr.stroke = "hsb(#{h},1,.5)"
 
-	drawAngle(newAngle,h)
-		
-	# change step counter (throttled function)
-	changeStepCounter()
-	
-changeStepCounter = Utils.throttle .05, ->
-	sketch.steps.html = Utils.round(Utils.modulate(redBox.x, [0,100], [0,3756], true))
-	
-		
