@@ -2,53 +2,53 @@ window.__imported__ = window.__imported__ || {};
 window.__imported__["Framer and Snap/layers.json.js"] = [
   {
     "maskFrame" : null,
-    "id" : "AF474BB9-B3FF-4314-90DF-296143B02C61",
+    "id" : "FF513719-2340-41AD-8DAF-6960A0E03449",
     "visible" : true,
     "children" : [
       {
         "maskFrame" : null,
-        "id" : "413C7A97-2450-4DFD-8682-B6EE983ECA08",
-        "visible" : true,
+        "id" : "4DBA8016-FDFF-42E4-952A-5A005CC643E1",
+        "visible" : false,
         "children" : [
 
         ],
         "image" : {
-          "path" : "images\/Layer-button-413C7A97-2450-4DFD-8682-B6EE983ECA08.png",
+          "path" : "images\/Layer-button-4DBA8016-FDFF-42E4-952A-5A005CC643E1.png",
           "frame" : {
-            "y" : 1148,
-            "x" : 212,
-            "width" : 350,
-            "height" : 81
+            "y" : 1048,
+            "x" : 112,
+            "width" : 550,
+            "height" : 281
           }
         },
         "imageType" : "png",
         "layerFrame" : {
-          "y" : 1148,
-          "x" : 212,
-          "width" : 350,
-          "height" : 81
+          "y" : 1048,
+          "x" : 112,
+          "width" : 550,
+          "height" : 281
         },
         "name" : "button"
       },
       {
         "maskFrame" : null,
-        "id" : "BA5325CB-0E38-4D37-9B28-58B46FBF1434",
+        "id" : "A3E2BA04-7908-40D2-9FA1-F3862A3ADE5A",
         "visible" : true,
         "children" : [
           {
             "maskFrame" : null,
-            "id" : "BD5A67E0-F207-41F6-B7F0-C3AB52BD92C0",
+            "id" : "700BAA65-4BB0-4C0D-AD2F-552FF17799C2",
             "visible" : true,
             "children" : [
               {
                 "maskFrame" : null,
-                "id" : "57B9F7B3-3073-479D-9EE0-B7318F749583",
+                "id" : "E2CA1CE4-6BF9-42BF-B048-EA84A4360CAB",
                 "visible" : true,
                 "children" : [
 
                 ],
                 "image" : {
-                  "path" : "images\/Layer-Battery-57B9F7B3-3073-479D-9EE0-B7318F749583.png",
+                  "path" : "images\/Layer-Battery-E2CA1CE4-6BF9-42BF-B048-EA84A4360CAB.png",
                   "frame" : {
                     "y" : 10,
                     "x" : 691,
@@ -67,7 +67,7 @@ window.__imported__["Framer and Snap/layers.json.js"] = [
               }
             ],
             "image" : {
-              "path" : "images\/Layer-100%__Bluetooth__Battery-BD5A67E0-F207-41F6-B7F0-C3AB52BD92C0.png",
+              "path" : "images\/Layer-100%__Bluetooth__Battery-700BAA65-4BB0-4C0D-AD2F-552FF17799C2.png",
               "frame" : {
                 "y" : 4,
                 "x" : 595,
@@ -86,13 +86,13 @@ window.__imported__["Framer and Snap/layers.json.js"] = [
           },
           {
             "maskFrame" : null,
-            "id" : "E1617C81-5F17-4069-8001-84A9AFFD909C",
+            "id" : "62EA2C1C-1061-4889-9B35-A6BB7EF52B0C",
             "visible" : true,
             "children" : [
 
             ],
             "image" : {
-              "path" : "images\/Layer-Signal_&_Carrier-E1617C81-5F17-4069-8001-84A9AFFD909C.png",
+              "path" : "images\/Layer-Signal_&_Carrier-62EA2C1C-1061-4889-9B35-A6BB7EF52B0C.png",
               "frame" : {
                 "y" : 10,
                 "x" : 12,
@@ -111,7 +111,7 @@ window.__imported__["Framer and Snap/layers.json.js"] = [
           }
         ],
         "image" : {
-          "path" : "images\/Layer-statusbar-BA5325CB-0E38-4D37-9B28-58B46FBF1434.png",
+          "path" : "images\/Layer-statusbar-A3E2BA04-7908-40D2-9FA1-F3862A3ADE5A.png",
           "frame" : {
             "y" : 4,
             "x" : 12,
@@ -130,32 +130,107 @@ window.__imported__["Framer and Snap/layers.json.js"] = [
       },
       {
         "maskFrame" : null,
-        "id" : "8E1D8777-F997-4413-955F-2F385A9FF0B6",
+        "id" : "8C4CA59F-49D0-48B6-9AC7-D04E4B043FA3",
         "visible" : true,
         "children" : [
 
         ],
         "image" : {
-          "path" : "images\/Layer-steps-8E1D8777-F997-4413-955F-2F385A9FF0B6.png",
+          "path" : "images\/Layer-credentialID-8C4CA59F-49D0-48B6-9AC7-D04E4B043FA3.png",
           "frame" : {
-            "y" : 608,
-            "x" : 242,
-            "width" : 267,
-            "height" : 61
+            "y" : 288,
+            "x" : 182,
+            "width" : 383,
+            "height" : 38
           }
         },
         "imageType" : "png",
         "layerFrame" : {
-          "y" : 608,
+          "y" : 288,
+          "x" : 182,
+          "width" : 383,
+          "height" : 38
+        },
+        "name" : "credentialID"
+      },
+      {
+        "maskFrame" : null,
+        "id" : "468CAFC2-F59F-465C-93DA-6B115DCE33D4",
+        "visible" : true,
+        "children" : [
+
+        ],
+        "image" : {
+          "path" : "images\/Layer-seconds-468CAFC2-F59F-465C-93DA-6B115DCE33D4.png",
+          "frame" : {
+            "y" : 456,
+            "x" : 359,
+            "width" : 30,
+            "height" : 20
+          }
+        },
+        "imageType" : "png",
+        "layerFrame" : {
+          "y" : 456,
+          "x" : 359,
+          "width" : 30,
+          "height" : 20
+        },
+        "name" : "seconds"
+      },
+      {
+        "maskFrame" : null,
+        "id" : "26BC6CD5-7D32-4C3E-AA7A-D8DA9033E1AE",
+        "visible" : true,
+        "children" : [
+
+        ],
+        "image" : {
+          "path" : "images\/Layer-secondsback-26BC6CD5-7D32-4C3E-AA7A-D8DA9033E1AE.png",
+          "frame" : {
+            "y" : 438,
+            "x" : 338,
+            "width" : 75,
+            "height" : 56
+          }
+        },
+        "imageType" : "png",
+        "layerFrame" : {
+          "y" : 438,
+          "x" : 338,
+          "width" : 75,
+          "height" : 56
+        },
+        "name" : "secondsback"
+      },
+      {
+        "maskFrame" : null,
+        "id" : "D7D50DC4-EB9A-48A8-9B86-7CF853328D83",
+        "visible" : true,
+        "children" : [
+
+        ],
+        "image" : {
+          "path" : "images\/Layer-code-D7D50DC4-EB9A-48A8-9B86-7CF853328D83.png",
+          "frame" : {
+            "y" : 744,
+            "x" : 242,
+            "width" : 267,
+            "height" : 60
+          }
+        },
+        "imageType" : "png",
+        "layerFrame" : {
+          "y" : 744,
           "x" : 242,
           "width" : 267,
-          "height" : 61
+          "height" : 60
         },
-        "name" : "steps"
+        "name" : "code"
       }
     ],
     "image" : {
-      "path" : "images\/Layer-iPhone_6-AF474BB9-B3FF-4314-90DF-296143B02C61.png",
+      "path" : "images\/Layer-iPhone_6-FF513719-2340-41AD-8DAF-6960A0E03449.png",
       "frame" : {
         "y" : 0,
         "x" : 0,

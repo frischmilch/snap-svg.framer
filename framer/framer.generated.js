@@ -5,53 +5,53 @@ window.__imported__ = window.__imported__ || {};
 window.__imported__["Framer and Snap/layers.json.js"] = [
   {
     "maskFrame" : null,
-    "id" : "AF474BB9-B3FF-4314-90DF-296143B02C61",
+    "id" : "FF513719-2340-41AD-8DAF-6960A0E03449",
     "visible" : true,
     "children" : [
       {
         "maskFrame" : null,
-        "id" : "413C7A97-2450-4DFD-8682-B6EE983ECA08",
-        "visible" : true,
+        "id" : "4DBA8016-FDFF-42E4-952A-5A005CC643E1",
+        "visible" : false,
         "children" : [
 
         ],
         "image" : {
-          "path" : "images\/Layer-button-413C7A97-2450-4DFD-8682-B6EE983ECA08.png",
+          "path" : "images\/Layer-button-4DBA8016-FDFF-42E4-952A-5A005CC643E1.png",
           "frame" : {
-            "y" : 1148,
-            "x" : 212,
-            "width" : 350,
-            "height" : 81
+            "y" : 1048,
+            "x" : 112,
+            "width" : 550,
+            "height" : 281
           }
         },
         "imageType" : "png",
         "layerFrame" : {
-          "y" : 1148,
-          "x" : 212,
-          "width" : 350,
-          "height" : 81
+          "y" : 1048,
+          "x" : 112,
+          "width" : 550,
+          "height" : 281
         },
         "name" : "button"
       },
       {
         "maskFrame" : null,
-        "id" : "BA5325CB-0E38-4D37-9B28-58B46FBF1434",
+        "id" : "A3E2BA04-7908-40D2-9FA1-F3862A3ADE5A",
         "visible" : true,
         "children" : [
           {
             "maskFrame" : null,
-            "id" : "BD5A67E0-F207-41F6-B7F0-C3AB52BD92C0",
+            "id" : "700BAA65-4BB0-4C0D-AD2F-552FF17799C2",
             "visible" : true,
             "children" : [
               {
                 "maskFrame" : null,
-                "id" : "57B9F7B3-3073-479D-9EE0-B7318F749583",
+                "id" : "E2CA1CE4-6BF9-42BF-B048-EA84A4360CAB",
                 "visible" : true,
                 "children" : [
 
                 ],
                 "image" : {
-                  "path" : "images\/Layer-Battery-57B9F7B3-3073-479D-9EE0-B7318F749583.png",
+                  "path" : "images\/Layer-Battery-E2CA1CE4-6BF9-42BF-B048-EA84A4360CAB.png",
                   "frame" : {
                     "y" : 10,
                     "x" : 691,
@@ -70,7 +70,7 @@ window.__imported__["Framer and Snap/layers.json.js"] = [
               }
             ],
             "image" : {
-              "path" : "images\/Layer-100%__Bluetooth__Battery-BD5A67E0-F207-41F6-B7F0-C3AB52BD92C0.png",
+              "path" : "images\/Layer-100%__Bluetooth__Battery-700BAA65-4BB0-4C0D-AD2F-552FF17799C2.png",
               "frame" : {
                 "y" : 4,
                 "x" : 595,
@@ -89,13 +89,13 @@ window.__imported__["Framer and Snap/layers.json.js"] = [
           },
           {
             "maskFrame" : null,
-            "id" : "E1617C81-5F17-4069-8001-84A9AFFD909C",
+            "id" : "62EA2C1C-1061-4889-9B35-A6BB7EF52B0C",
             "visible" : true,
             "children" : [
 
             ],
             "image" : {
-              "path" : "images\/Layer-Signal_&_Carrier-E1617C81-5F17-4069-8001-84A9AFFD909C.png",
+              "path" : "images\/Layer-Signal_&_Carrier-62EA2C1C-1061-4889-9B35-A6BB7EF52B0C.png",
               "frame" : {
                 "y" : 10,
                 "x" : 12,
@@ -114,7 +114,7 @@ window.__imported__["Framer and Snap/layers.json.js"] = [
           }
         ],
         "image" : {
-          "path" : "images\/Layer-statusbar-BA5325CB-0E38-4D37-9B28-58B46FBF1434.png",
+          "path" : "images\/Layer-statusbar-A3E2BA04-7908-40D2-9FA1-F3862A3ADE5A.png",
           "frame" : {
             "y" : 4,
             "x" : 12,
@@ -133,32 +133,107 @@ window.__imported__["Framer and Snap/layers.json.js"] = [
       },
       {
         "maskFrame" : null,
-        "id" : "8E1D8777-F997-4413-955F-2F385A9FF0B6",
+        "id" : "8C4CA59F-49D0-48B6-9AC7-D04E4B043FA3",
         "visible" : true,
         "children" : [
 
         ],
         "image" : {
-          "path" : "images\/Layer-steps-8E1D8777-F997-4413-955F-2F385A9FF0B6.png",
+          "path" : "images\/Layer-credentialID-8C4CA59F-49D0-48B6-9AC7-D04E4B043FA3.png",
           "frame" : {
-            "y" : 608,
-            "x" : 242,
-            "width" : 267,
-            "height" : 61
+            "y" : 288,
+            "x" : 182,
+            "width" : 383,
+            "height" : 38
           }
         },
         "imageType" : "png",
         "layerFrame" : {
-          "y" : 608,
+          "y" : 288,
+          "x" : 182,
+          "width" : 383,
+          "height" : 38
+        },
+        "name" : "credentialID"
+      },
+      {
+        "maskFrame" : null,
+        "id" : "468CAFC2-F59F-465C-93DA-6B115DCE33D4",
+        "visible" : true,
+        "children" : [
+
+        ],
+        "image" : {
+          "path" : "images\/Layer-seconds-468CAFC2-F59F-465C-93DA-6B115DCE33D4.png",
+          "frame" : {
+            "y" : 456,
+            "x" : 359,
+            "width" : 30,
+            "height" : 20
+          }
+        },
+        "imageType" : "png",
+        "layerFrame" : {
+          "y" : 456,
+          "x" : 359,
+          "width" : 30,
+          "height" : 20
+        },
+        "name" : "seconds"
+      },
+      {
+        "maskFrame" : null,
+        "id" : "26BC6CD5-7D32-4C3E-AA7A-D8DA9033E1AE",
+        "visible" : true,
+        "children" : [
+
+        ],
+        "image" : {
+          "path" : "images\/Layer-secondsback-26BC6CD5-7D32-4C3E-AA7A-D8DA9033E1AE.png",
+          "frame" : {
+            "y" : 438,
+            "x" : 338,
+            "width" : 75,
+            "height" : 56
+          }
+        },
+        "imageType" : "png",
+        "layerFrame" : {
+          "y" : 438,
+          "x" : 338,
+          "width" : 75,
+          "height" : 56
+        },
+        "name" : "secondsback"
+      },
+      {
+        "maskFrame" : null,
+        "id" : "D7D50DC4-EB9A-48A8-9B86-7CF853328D83",
+        "visible" : true,
+        "children" : [
+
+        ],
+        "image" : {
+          "path" : "images\/Layer-code-D7D50DC4-EB9A-48A8-9B86-7CF853328D83.png",
+          "frame" : {
+            "y" : 744,
+            "x" : 242,
+            "width" : 267,
+            "height" : 60
+          }
+        },
+        "imageType" : "png",
+        "layerFrame" : {
+          "y" : 744,
           "x" : 242,
           "width" : 267,
-          "height" : 61
+          "height" : 60
         },
-        "name" : "steps"
+        "name" : "code"
       }
     ],
     "image" : {
-      "path" : "images\/Layer-iPhone_6-AF474BB9-B3FF-4314-90DF-296143B02C61.png",
+      "path" : "images\/Layer-iPhone_6-FF513719-2340-41AD-8DAF-6960A0E03449.png",
       "frame" : {
         "y" : 0,
         "x" : 0,
@@ -191,7 +266,7 @@ window.Framer.Defaults.DeviceComponent = {
 };
 
 window.FramerStudioInfo = {
-  "deviceImagesUrl" : "file:\/\/\/Applications\/Framer%20Studio.app\/Contents\/Resources\/DeviceImages\/",
+  "deviceImagesUrl" : "\/_server\/resources\/DeviceImages",
   "documentTitle" : "framer and snap.framer"
 };
 
@@ -677,7 +752,7 @@ exports.HighlightComponent = (function() {
 
 
 },{}],5:[function(require,module,exports){
-var BUILDS, EventEmitter, Runtime, TRANSFORM_REGEX, bridge,
+var BUILDS, EventEmitter, Runtime, bridge, parseUrl,
   bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
   extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
   hasProp = {}.hasOwnProperty;
@@ -686,20 +761,24 @@ EventEmitter = require("eventemitter3");
 
 bridge = require("./Bridge").bridge;
 
-TRANSFORM_REGEX = /(([\w.]+) += +new [\w]*Layer[^;]*;)/g;
-
 BUILDS = 0;
+
+parseUrl = function(url) {
+  var parser;
+  parser = document.createElement("a");
+  parser.href = url;
+  return parser;
+};
 
 Runtime = (function(superClass) {
   extend(Runtime, superClass);
 
   function Runtime() {
-    this._windowErrorHandler = bind(this._windowErrorHandler, this);
     this._errorHandler = bind(this._errorHandler, this);
-    this.init();
+    this.setup();
   }
 
-  Runtime.prototype.init = function() {
+  Runtime.prototype.setup = function() {
     var properties;
     if (typeof Framer !== "undefined" && Framer !== null ? Framer.Device : void 0) {
       properties = ["deviceScale", "contentScale", "deviceType", "keyboard", "orientation", "fullScreen"];
@@ -732,8 +811,7 @@ Runtime = (function(superClass) {
   };
 
   Runtime.prototype.uncoffee = function(code) {
-    var CoffeeScript, e, error, result;
-    CoffeeScript = (typeof window !== "undefined" && window !== null ? window.CoffeeScript : void 0) || this.CoffeeScript;
+    var e, error, result;
     try {
       result = CoffeeScript.compile(code, {
         sourceMap: true,
@@ -753,31 +831,26 @@ Runtime = (function(superClass) {
     return result;
   };
 
-  Runtime.prototype.transform = function(code) {
-    return code;
-  };
-
-  Runtime.prototype._errorHandler = function(error) {
-    error.lineNumber = this._lookupLine(error.lineno);
+  Runtime.prototype._errorHandler = function(runtimeError) {
+    var error, errorFromCompiledCoffeeScript, fileName;
+    errorFromCompiledCoffeeScript = runtimeError.filename === window.location.href;
+    if (errorFromCompiledCoffeeScript) {
+      error = new Error(runtimeError.message);
+      error.lineNumber = this._lookupLine(runtimeError.lineno);
+    } else {
+      fileName = _.last(parseUrl(runtimeError.filename).pathname.split("/"));
+      error = new Error("[" + fileName + "] " + runtimeError.message);
+      error.lineNumber = -1;
+    }
     return bridge.sendError(error);
   };
 
-  Runtime.prototype._windowErrorHandler = function(message, url, line, col) {
-    if (_.endsWith(url, ".temp.html")) {
-      console.error("Framer script error line " + (this._lookupLine(line)) + ": " + message);
-      return true;
-    }
-    return false;
-  };
-
   Runtime.prototype._errorHandlerSetup = function() {
-    window.addEventListener("error", this._errorHandler);
-    return window.onerror = this._windowErrorHandler;
+    return window.addEventListener("error", this._errorHandler);
   };
 
   Runtime.prototype._errorHandlerRemove = function() {
-    window.removeEventListener("error", this._errorHandler);
-    return window.onerror = null;
+    return window.removeEventListener("error", this._errorHandler);
   };
 
   Runtime.prototype._lookupLine = function(lineNumber) {
