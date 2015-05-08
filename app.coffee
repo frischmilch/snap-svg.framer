@@ -12,7 +12,7 @@ sketch.seconds.style =
 	lineHeight: ".8"
 
 sketch.code.image = null
-sketch.code.html = Utils.round(Utils.randomNumber(200000,90000))
+sketch.code.html = Utils.round(Utils.randomNumber(200000,900000))
 sketch.code.style =
 	color: "black"
 	textAlign: "center"
@@ -88,7 +88,7 @@ redBox = new Layer { width: 10, height: 10, backgroundColor: "red" }
 redBox.states.add { full: x: 100 }
 redBox.states.animationOptions = 
 	curve: "linear",
-	time: 30
+	time: 4
 
 # kickoff initial animation
 Utils.delay .25, ->
@@ -114,4 +114,10 @@ redBox.on "change:x", (e) ->
 	# change step counter (throttled function)
 	sketch.seconds.html = Utils.round(Utils.modulate(redBox.x, [0,100], [30,0], true))
 	
-		
+	# repeat in the end
+	if e is 100
+		# new code
+		sketch.code.html = Utils.round(Utils.randomNumber(200000,900000))
+		# new counter
+		redBox.states.switchInstant "default"	
+		redBox.states.next()	
