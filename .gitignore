@@ -26,5 +26,5 @@ Temporary Items
 .temp.html
 framer/*.old.*
 framer/backup.coffee
-framer/backup/*
+framer/backups/*
 framer/.*.hash
