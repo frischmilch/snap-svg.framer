@@ -67,7 +67,7 @@ logo.attr
 # set up helper that we use for animation
 redBox = new Layer { width: 10, height: 10, backgroundColor: null }
 redBox.states.add { full: x: 100 }
-redBox.states.animationOptions = curve: "cubic-bezier(.8,0,.6,1)", time: 2
+redBox.states.animationOptions = curve: "cubic-bezier(.8,0,.6,1)", time: 2.5
 
 # show launch image
 sketch.launchimage.visible = true
@@ -89,8 +89,8 @@ scroller.scrollHorizontal = false
 scroller.opacity = 0
 scroller.y = 130
 
-# fade out image
-Utils.delay 1.5, ->
+# fade out launch image
+Utils.delay 2, ->
 	sketch.launchimage.animate
 		properties:
 			opacity: 0
@@ -100,7 +100,7 @@ Utils.delay 1.5, ->
 	Utils.delay .75, ->
 		redBox.states.next()
 
-counter = 1
+counter = 0
 
 # change SVG when red box moves
 redBox.on "change:x", (e) ->
