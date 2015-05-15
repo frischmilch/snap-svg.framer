@@ -5,53 +5,26 @@ window.__imported__ = window.__imported__ || {};
 window.__imported__["Framer and Snap/layers.json.js"] = [
   {
     "maskFrame" : null,
-    "id" : "10A908D2-280D-4F21-800F-70550B7A957E",
-    "visible" : true,
     "children" : [
       {
         "maskFrame" : null,
-        "id" : "A834EA96-3A5D-4967-AE9B-0E99D0D739B3",
-        "visible" : true,
-        "children" : [
-
-        ],
-        "image" : {
-          "path" : "images\/Layer-button-A834EA96-3A5D-4967-AE9B-0E99D0D739B3.png",
-          "frame" : {
-            "y" : 1148,
-            "x" : 212,
-            "width" : 350,
-            "height" : 81
-          }
-        },
-        "imageType" : "png",
-        "layerFrame" : {
-          "y" : 1148,
-          "x" : 212,
-          "width" : 350,
-          "height" : 81
-        },
-        "name" : "button"
-      },
-      {
-        "maskFrame" : null,
-        "id" : "179A505E-A14B-4C54-9052-764B99E88881",
+        "id" : "2F6567B8-B47D-4AC2-81D8-B143CF247D8C",
         "visible" : true,
         "children" : [
           {
             "maskFrame" : null,
-            "id" : "0FF29CAC-15A8-4141-BBC1-2947803E85F8",
+            "id" : "991E48AD-4547-4103-AA3F-60B4C55DE191",
             "visible" : true,
             "children" : [
               {
                 "maskFrame" : null,
-                "id" : "6C28E580-510E-4CC7-A3F6-ECDF573944D6",
+                "id" : "4A75B942-5CC1-49AF-A994-FABF21297E8A",
                 "visible" : true,
                 "children" : [
 
                 ],
                 "image" : {
-                  "path" : "images\/Layer-Battery-6C28E580-510E-4CC7-A3F6-ECDF573944D6.png",
+                  "path" : "images\/Layer-Battery-4A75B942-5CC1-49AF-A994-FABF21297E8A.png",
                   "frame" : {
                     "y" : 10,
                     "x" : 691,
@@ -70,7 +43,7 @@ window.__imported__["Framer and Snap/layers.json.js"] = [
               }
             ],
             "image" : {
-              "path" : "images\/Layer-100%__Bluetooth__Battery-0FF29CAC-15A8-4141-BBC1-2947803E85F8.png",
+              "path" : "images\/Layer-100%__Bluetooth__Battery-991E48AD-4547-4103-AA3F-60B4C55DE191.png",
               "frame" : {
                 "y" : 4,
                 "x" : 595,
@@ -89,13 +62,13 @@ window.__imported__["Framer and Snap/layers.json.js"] = [
           },
           {
             "maskFrame" : null,
-            "id" : "FE2F42AE-BBF5-41A1-9FED-DC31C0F6986C",
+            "id" : "A99DA081-875B-4860-863D-39E034C2D33A",
             "visible" : true,
             "children" : [
 
             ],
             "image" : {
-              "path" : "images\/Layer-Signal_&_Carrier-FE2F42AE-BBF5-41A1-9FED-DC31C0F6986C.png",
+              "path" : "images\/Layer-Signal_&_Carrier-A99DA081-875B-4860-863D-39E034C2D33A.png",
               "frame" : {
                 "y" : 10,
                 "x" : 12,
@@ -114,7 +87,7 @@ window.__imported__["Framer and Snap/layers.json.js"] = [
           }
         ],
         "image" : {
-          "path" : "images\/Layer-statusbar-179A505E-A14B-4C54-9052-764B99E88881.png",
+          "path" : "images\/Layer-statusbar-2F6567B8-B47D-4AC2-81D8-B143CF247D8C.png",
           "frame" : {
             "y" : 4,
             "x" : 12,
@@ -132,15 +105,8 @@ window.__imported__["Framer and Snap/layers.json.js"] = [
         "name" : "statusbar"
       }
     ],
-    "image" : {
-      "path" : "images\/Layer-iPhone_6-10A908D2-280D-4F21-800F-70550B7A957E.png",
-      "frame" : {
-        "y" : 0,
-        "x" : 0,
-        "width" : 750,
-        "height" : 1334
-      }
-    },
+    "id" : "9320C1DF-0AF6-40E3-8F05-0802BAB55990",
+    "visible" : true,
     "imageType" : "png",
     "layerFrame" : {
       "y" : 0,
@@ -148,7 +114,257 @@ window.__imported__["Framer and Snap/layers.json.js"] = [
       "width" : 750,
       "height" : 1334
     },
-    "name" : "iPhone_6"
+    "name" : "home"
+  },
+  {
+    "maskFrame" : null,
+    "children" : [
+      {
+        "maskFrame" : null,
+        "id" : "7F4EE5B1-55E6-4364-B494-9644F9283EB4",
+        "visible" : true,
+        "children" : [
+
+        ],
+        "image" : {
+          "path" : "images\/Layer-image-7F4EE5B1-55E6-4364-B494-9644F9283EB4.png",
+          "frame" : {
+            "y" : 0,
+            "x" : 0,
+            "width" : 750,
+            "height" : 1334
+          }
+        },
+        "imageType" : "png",
+        "layerFrame" : {
+          "y" : 0,
+          "x" : 0,
+          "width" : 750,
+          "height" : 1334
+        },
+        "name" : "image"
+      }
+    ],
+    "id" : "064ED92A-4A73-42C6-8D0B-891B66694389",
+    "visible" : false,
+    "imageType" : "png",
+    "layerFrame" : {
+      "y" : 0,
+      "x" : 0,
+      "width" : 750,
+      "height" : 1334
+    },
+    "name" : "launchimage"
+  },
+  {
+    "maskFrame" : null,
+    "id" : "931CD9EB-E863-4D12-8EA2-A5AD24C6F1BE",
+    "visible" : false,
+    "children" : [
+
+    ],
+    "image" : {
+      "path" : "images\/Layer-Artboard_2-931CD9EB-E863-4D12-8EA2-A5AD24C6F1BE.png",
+      "frame" : {
+        "y" : 0,
+        "x" : 0,
+        "width" : 750,
+        "height" : 750
+      }
+    },
+    "imageType" : "png",
+    "layerFrame" : {
+      "y" : 0,
+      "x" : 0,
+      "width" : 750,
+      "height" : 750
+    },
+    "name" : "Artboard_2"
+  },
+  {
+    "maskFrame" : null,
+    "id" : "B702F14D-D7B4-4D12-9471-4EAFF7959D6D",
+    "visible" : false,
+    "children" : [
+
+    ],
+    "image" : {
+      "path" : "images\/Layer-Artboard_2_Copy-B702F14D-D7B4-4D12-9471-4EAFF7959D6D.png",
+      "frame" : {
+        "y" : 0,
+        "x" : 0,
+        "width" : 100,
+        "height" : 100
+      }
+    },
+    "imageType" : "png",
+    "layerFrame" : {
+      "y" : 0,
+      "x" : 0,
+      "width" : 100,
+      "height" : 100
+    },
+    "name" : "Artboard_2_Copy"
+  },
+  {
+    "maskFrame" : null,
+    "children" : [
+      {
+        "maskFrame" : null,
+        "id" : "8B0DE2C9-3C38-4459-8762-DDB26ADB3D61",
+        "visible" : true,
+        "children" : [
+
+        ],
+        "image" : {
+          "path" : "images\/Layer-ptrCanvas-8B0DE2C9-3C38-4459-8762-DDB26ADB3D61.png",
+          "frame" : {
+            "y" : 150,
+            "x" : 325,
+            "width" : 100,
+            "height" : 100
+          }
+        },
+        "imageType" : "png",
+        "layerFrame" : {
+          "y" : 150,
+          "x" : 325,
+          "width" : 100,
+          "height" : 100
+        },
+        "name" : "ptrCanvas"
+      },
+      {
+        "maskFrame" : null,
+        "children" : [
+          {
+            "maskFrame" : null,
+            "id" : "807E9E28-0D7F-48B5-9574-1A4151418A7B",
+            "visible" : true,
+            "children" : [
+
+            ],
+            "image" : {
+              "path" : "images\/Layer-titleHome-807E9E28-0D7F-48B5-9574-1A4151418A7B.png",
+              "frame" : {
+                "y" : 72,
+                "x" : 273,
+                "width" : 204,
+                "height" : 32
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 72,
+              "x" : 273,
+              "width" : 204,
+              "height" : 32
+            },
+            "name" : "titleHome"
+          },
+          {
+            "maskFrame" : null,
+            "id" : "962021F4-D8A8-41FB-A1DF-637209F94E21",
+            "visible" : true,
+            "children" : [
+
+            ],
+            "image" : {
+              "path" : "images\/Layer-headerback-962021F4-D8A8-41FB-A1DF-637209F94E21.png",
+              "frame" : {
+                "y" : 0,
+                "x" : 0,
+                "width" : 750,
+                "height" : 130
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 0,
+              "x" : 0,
+              "width" : 750,
+              "height" : 130
+            },
+            "name" : "headerback"
+          }
+        ],
+        "id" : "A8048FF3-B036-4DF1-B201-B18753461C24",
+        "visible" : true,
+        "imageType" : "png",
+        "layerFrame" : {
+          "y" : 0,
+          "x" : 0,
+          "width" : 750,
+          "height" : 130
+        },
+        "name" : "header"
+      }
+    ],
+    "id" : "DB238505-6B5C-4467-BB71-F163E5FC929B",
+    "visible" : false,
+    "imageType" : "png",
+    "layerFrame" : {
+      "y" : 0,
+      "x" : 0,
+      "width" : 750,
+      "height" : 1334
+    },
+    "name" : "main"
+  },
+  {
+    "maskFrame" : null,
+    "children" : [
+      {
+        "maskFrame" : null,
+        "children" : [
+          {
+            "maskFrame" : null,
+            "id" : "4D3EFEC4-A57B-46F5-8358-229AB26F6DC2",
+            "visible" : true,
+            "children" : [
+
+            ],
+            "image" : {
+              "path" : "images\/Layer-content-4D3EFEC4-A57B-46F5-8358-229AB26F6DC2.png",
+              "frame" : {
+                "y" : 0,
+                "x" : 0,
+                "width" : 750,
+                "height" : 2080
+              }
+            },
+            "imageType" : "png",
+            "layerFrame" : {
+              "y" : 0,
+              "x" : 0,
+              "width" : 750,
+              "height" : 2080
+            },
+            "name" : "content"
+          }
+        ],
+        "id" : "E3B135CB-91E5-4761-9407-33896995011F",
+        "visible" : true,
+        "imageType" : "png",
+        "layerFrame" : {
+          "y" : 0,
+          "x" : 0,
+          "width" : 750,
+          "height" : 2080
+        },
+        "name" : "list"
+      }
+    ],
+    "id" : "A53337A0-B412-46E5-B604-B1A419BEED84",
+    "visible" : false,
+    "imageType" : "png",
+    "layerFrame" : {
+      "y" : 0,
+      "x" : 0,
+      "width" : 750,
+      "height" : 2111
+    },
+    "name" : "browsepage"
   }
 ]
 window.Framer.Defaults.DeviceView = {
@@ -166,7 +382,7 @@ window.Framer.Defaults.DeviceComponent = {
 };
 
 window.FramerStudioInfo = {
-  "deviceImagesUrl" : "file:\/\/\/Applications\/Framer%20Studio.app\/Contents\/Resources\/DeviceImages\/",
+  "deviceImagesUrl" : "\/_server\/resources\/DeviceImages",
   "documentTitle" : "framer and snap.framer"
 };
 
@@ -652,7 +868,7 @@ exports.HighlightComponent = (function() {
 
 
 },{}],5:[function(require,module,exports){
-var BUILDS, EventEmitter, Runtime, TRANSFORM_REGEX, bridge,
+var BUILDS, EventEmitter, Runtime, bridge, parseUrl,
   bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
   extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
   hasProp = {}.hasOwnProperty;
@@ -661,20 +877,24 @@ EventEmitter = require("eventemitter3");
 
 bridge = require("./Bridge").bridge;
 
-TRANSFORM_REGEX = /(([\w.]+) += +new [\w]*Layer[^;]*;)/g;
-
 BUILDS = 0;
+
+parseUrl = function(url) {
+  var parser;
+  parser = document.createElement("a");
+  parser.href = url;
+  return parser;
+};
 
 Runtime = (function(superClass) {
   extend(Runtime, superClass);
 
   function Runtime() {
-    this._windowErrorHandler = bind(this._windowErrorHandler, this);
     this._errorHandler = bind(this._errorHandler, this);
-    this.init();
+    this.setup();
   }
 
-  Runtime.prototype.init = function() {
+  Runtime.prototype.setup = function() {
     var properties;
     if (typeof Framer !== "undefined" && Framer !== null ? Framer.Device : void 0) {
       properties = ["deviceScale", "contentScale", "deviceType", "keyboard", "orientation", "fullScreen"];
@@ -707,8 +927,7 @@ Runtime = (function(superClass) {
   };
 
   Runtime.prototype.uncoffee = function(code) {
-    var CoffeeScript, e, error, result;
-    CoffeeScript = (typeof window !== "undefined" && window !== null ? window.CoffeeScript : void 0) || this.CoffeeScript;
+    var e, error, result;
     try {
       result = CoffeeScript.compile(code, {
         sourceMap: true,
@@ -728,31 +947,26 @@ Runtime = (function(superClass) {
     return result;
   };
 
-  Runtime.prototype.transform = function(code) {
-    return code;
-  };
-
-  Runtime.prototype._errorHandler = function(error) {
-    error.lineNumber = this._lookupLine(error.lineno);
+  Runtime.prototype._errorHandler = function(runtimeError) {
+    var error, errorFromCompiledCoffeeScript, fileName;
+    errorFromCompiledCoffeeScript = runtimeError.filename === window.location.href;
+    if (errorFromCompiledCoffeeScript) {
+      error = new Error(runtimeError.message);
+      error.lineNumber = this._lookupLine(runtimeError.lineno);
+    } else {
+      fileName = _.last(parseUrl(runtimeError.filename).pathname.split("/"));
+      error = new Error("[" + fileName + "] " + runtimeError.message);
+      error.lineNumber = -1;
+    }
     return bridge.sendError(error);
   };
 
-  Runtime.prototype._windowErrorHandler = function(message, url, line, col) {
-    if (_.endsWith(url, ".temp.html")) {
-      console.error("Framer script error line " + (this._lookupLine(line)) + ": " + message);
-      return true;
-    }
-    return false;
-  };
-
   Runtime.prototype._errorHandlerSetup = function() {
-    window.addEventListener("error", this._errorHandler);
-    return window.onerror = this._windowErrorHandler;
+    return window.addEventListener("error", this._errorHandler);
   };
 
   Runtime.prototype._errorHandlerRemove = function() {
-    window.removeEventListener("error", this._errorHandler);
-    return window.onerror = null;
+    return window.removeEventListener("error", this._errorHandler);
   };
 
   Runtime.prototype._lookupLine = function(lineNumber) {
