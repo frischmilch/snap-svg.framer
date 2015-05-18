@@ -44,12 +44,24 @@ object.attr
 	strokeDasharray: pathLength + ' ' + pathLength
 	strokeDashoffset: pathLength # set offset to pathlength makes the path invisible
 
+
 # set up PTR object
 sketch.ptrCanvas.image = null
 sketch.ptrCanvas.html = "<svg id='ptr' style='width:#{sketch.ptrCanvas.width}px;height:#{sketch.ptrCanvas.height}px;ignore-events:all;'></svg>"
 ptr = Snap(sketch.ptrCanvas.querySelector("#ptr"))
 
 
+# set up PTR loading template
+ptrtemplate = ptr.path("M82.7308069,45.1461494 L17.2691931,45.1461494 L29.3466948,68.2717265 L56.9433267,1.46738281 L58.2860566,98.5326172 L82.7308069,45.1461494 Z")
+ptrtemplate.transform("translate(0,4) scale(.9)")
+ptrtemplate.attr
+	fill: "none"
+	stroke: "hsb(0,0,.75)"
+	strokeWidth: "3px"
+	strokeLinejoin: "round"
+	opacity: 0 # hide at first
+	
+# set up PTR vector
 logo = ptr.path("M82.7308069,45.1461494 L17.2691931,45.1461494 L29.3466948,68.2717265 L56.9433267,1.46738281 L58.2860566,98.5326172 L82.7308069,45.1461494 Z")
 logo.transform("translate(0,4) scale(.9)")
 
@@ -64,10 +76,17 @@ logo.attr
 	strokeDasharray: logoPath + ' ' + logoPath
 	strokeDashoffset: logoPath # set offset to pathlength makes the path invisible
 
+
 # set up helper that we use for animation
 redBox = new Layer { width: 10, height: 10, backgroundColor: null }
 redBox.states.add { full: x: 100 }
-redBox.states.animationOptions = curve: "cubic-bezier(.8,0,.6,1)", time: 2.5
+greenBox = new Layer { width: 10, height: 10, y: 10, backgroundColor: null }
+greenBox.states.add { full: x: 100 }
+
+greenBox.states.animationOptions = 
+redBox.states.animationOptions = 
+	curve: "cubic-bezier(.8,0,.6,1)", time: 2.5
+
 
 # show launch image
 sketch.launchimage.visible = true
@@ -89,87 +108,106 @@ scroller.scrollHorizontal = false
 scroller.opacity = 0
 scroller.y = 130
 
-# fade out launch image
+###
+# SEQUENCE OF EVENTS
+###
 Utils.delay 2, ->
+	# fade out launch image
 	sketch.launchimage.animate
 		properties:
 			opacity: 0
 		time: .5
+	# kickoff loading animation
+	Utils.delay .75, -> redBox.states.next()
+	# after some random time, advance to content
+	Utils.delay Utils.randomNumber(2.5,5.5), ->
+#		print "everything loaded!"
+		# switch states
+		canvas.animate
+			properties:
+				scale: .5
+				opacity: 0
+			time: .4
+			curve: "ease-in"
+		# show content
+		sketch.main.placeBehind(sketch.home)
+		sketch.main.visible = true
+		sketch.header.animate
+			properties:
+				y: 0
+				time: .5
+				curve: "ease-out"
+		# show scrollable content
+		Utils.delay .4, ->
+			sketch.browsepage.placeBehind(sketch.main)
+			sketch.browsepage.visible = true
+			scroller.animate
+				properties:
+					y: 0
+					opacity: 1
+		# stop red box
+		Utils.delay .4, -> redBox.animateStop()
 
-	# kickoff initial animation
-	Utils.delay .75, ->
-		redBox.states.next()
-
-counter = 0
+threshold = 130
+originalContentInset = scroller.contentInset
+isCurrentlyUpdating = false
+sketch.ptrCanvas.originalSuperLayer = sketch.ptrCanvas.superLayer
+sketch.ptrCanvas.originalFrame = sketch.ptrCanvas.frame
 
 # change SVG when red box moves
 redBox.on "change:x", (e) ->
-	
-	# offset dash in path from pathlength to 0
-	object.attr { strokeDashoffset: Utils.modulate(e, [0,100], [pathLength,0], true) }
+	object.attr { strokeDashoffset: Utils.modulate(e, [0,100], [pathLength,0], true) } # grow loading object
 	
 	# in the end, repeat
 	if e >= 100
-		if counter < 3
-			Utils.delay .3, ->
-				counter++
-				redBox.states.switchInstant "default"
-				redBox.states.next()
-		else
-			# switch states
-			canvas.animate
-				properties:
-					scale: .5
-					opacity: 0
-				time: .4
-				curve: "ease-in"
-			# show content
-			sketch.main.placeBehind(sketch.home)
-			sketch.main.visible = true
-			sketch.header.animate
-				properties:
-					y: 0
-				time: .5
-				curve: "ease-out"
-				
-			# show scrollable content
-			Utils.delay .4, ->
-				sketch.browsepage.placeBehind(sketch.main)
-				sketch.browsepage.visible = true
-				scroller.animate
-					properties:
-						y: 0
-						opacity: 1
+		Utils.delay .3, ->
+			redBox.states.switchInstant "default"
+			redBox.states.next()
 
-threshold = 130				
+# change pull to refresh vector when green box moves
+greenBox.on "change:x", (e) ->
+	if isCurrentlyUpdating
+		logo.attr { strokeDashoffset: Utils.modulate(e, [0,100], [logoPath,0], true) } # grow PTR vector path
+	
+		# in the end, repeat
+		if e >= 100
+			Utils.delay .3, ->
+				greenBox.states.switchInstant "default"
+				greenBox.states.next()
 
 # pull to refresh vector
 scroller.on Events.Move, (e) ->
 	scrollPos = scroller.scrollY*-1
 	
-	if scrollPos > 0
-		logo.attr
-			strokeDashoffset: Utils.modulate(scrollPos, [75,threshold], [logoPath,0], true)
-#			stroke: "hsb(0,0,#{Utils.modulate(scrollPos, [75,threshold], [.85,0], true)})"
+	# grow vector when we are not updating
+	if scrollPos > 0 and !isCurrentlyUpdating
+		logo.attr {strokeDashoffset: Utils.modulate(scrollPos, [75,threshold], [logoPath,0], true)} # grow PTR vector
 
-
+# check if we need to to Pull To Refresh
 scroller.on Events.ScrollEnd, (e) ->
 	scrollPos = scroller.scrollY*-1
-
-	if scrollPos >= threshold
+	
+	if scrollPos >= threshold and !isCurrentlyUpdating
 #		print "released after threshold!"
-		# stop animating the content
-		scroller.content.animateStop()
-		scroller.scrollToPoint(
-		    {x:0, y:threshold*-1}, # BUG? cannot scroll to negative value
-		    animate = true,
-    		animationOptions = {curve:"ease", time:.35}
-    	)
-    	
-    	# reset logo
-		logo.attr
-    		strokeDashoffset: logoPath
-    	
+		scroller.content.animateStop() # stop animating the content
+		scroller.contentInset = {top: originalContentInset.top+threshold} # change content inset
+		isCurrentlyUpdating = true # set update state
+		sketch.ptrCanvas.superLayer = scroller.content  # put PTR canvas inside scrollable framer
+		sketch.ptrCanvas.y = -112 # position at the top
+		ptrtemplate.attr { opacity: 1 } # show template
+		greenBox.states.next() # kickoff loading animation
+		# after some random time, finish loading
+		Utils.delay Utils.randomNumber(3.5,6), ->
+			scroller.content.animateStop() # stop animating the content
+			scroller.contentInset = {top: originalContentInset.top} # change content inset
+			isCurrentlyUpdating = false # set update state
+			sketch.ptrCanvas.superLayer = sketch.ptrCanvas.originalSuperLayer  # put PTR canvas back
+			sketch.ptrCanvas.y = sketch.ptrCanvas.originalFrame.y # reposition
+			ptrtemplate.attr {opacity: 0} # hide template
+			# reset settings etc to normal
+			greenBox.states.switchInstant "default"
+			greenBox.animateStop()
+			logo.attr {strokeDashoffset: logoPath} # reset logo
 	
 	
 
